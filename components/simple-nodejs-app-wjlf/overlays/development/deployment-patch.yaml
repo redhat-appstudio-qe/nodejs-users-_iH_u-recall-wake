@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-wjlf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-hpqt-tenant/nodejs-users/simple-nodejs-app-wjlf@sha256:262b5044f968d2eb10da99590515fba33753df6ffd23eea13723678e46f3c69e
+        name: my-nodejs
+        resources: {}
+status: {}
